@@ -11,6 +11,7 @@ import hashlib
 
 from time import time
 from werkzeug.utils import secure_filename
+from werkzeug.urls import url_encode
 from werkzeug.middleware.proxy_fix import ProxyFix
 from domoticz import getDomoticzDevices, queryDomoticz, saveJson
 from helpers import logger, get_settings, save_settings, remove_user, check_token, get_token, random_string, get_device, get_devices, generateToken, generateCsrfToken, csrfProtect
